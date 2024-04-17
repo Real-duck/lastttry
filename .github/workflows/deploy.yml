@@ -9,6 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
       - name: Checkout source
         uses: actions/checkout@v3
         with:
